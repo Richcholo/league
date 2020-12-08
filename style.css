@@ -1,0 +1,27 @@
+html{
+	padding: 0;
+	width: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+body{
+	height: 100%;
+
+}
+.title{
+	text-align: center;
+	color: white;
+}
+.title h1{
+	font: sans-serif;
+	font-size: 45px;
+}
+table, th, td {
+	border: 1px solid white;
+	align-self: center;
+	color: white;	
+	margin-left: 37%;
+	margin-right: 35%;
+	font-family: sans-serif;
+}	
