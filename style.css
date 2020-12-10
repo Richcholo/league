@@ -25,3 +25,15 @@ table, th, td {
 	margin-right: 35%;
 	font-family: sans-serif;
 }
+.btn-link.btn-anchor{
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 15px;
+}
+.modal-body p{
+	font-size: 20px;
+}
