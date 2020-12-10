@@ -2,7 +2,12 @@
 <html>
 <head>
 	<title>League Off-Meta</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body style="background: #18191A">
 <div class="title">
@@ -10,62 +15,287 @@
 </div>
 <table>
 	<tr>
-		<th style="color: red">Champion + Build</th>
+		<th style="color: red;text-align: center;">Champion + Build</th>
+	</tr>
+	<tr>
+	<div>
+		<td>
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#Cho">
+			<span style="color: lime;font-weight: bold;">Immortal Cho</span>
+			</button>
+			 : Sun/Frostfire > Thornmail > Garg
+			 <div id="Cho" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Grasp > Demolish > Conditioning > Overgrowth</p>
+			 				<p>Biscuits > Time Warp Tonic</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
+		</td>
+	</div>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: lime;font-weight: bold;">Immortal Cho</span> : Sun/Frostfire > Thornmail > Garg
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#Sett">
+			<span style="color: lime;font-weight: bold;">Immortal Sett</span>
+			</button>
+			 : Sunfire > Thornmail > Omen
+			 <div id="Sett" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Grasp > Shield Bash > Conditioning > Revitalize</p>
+			 				<p>Triumph > Last Stand</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: lime;font-weight: bold;">Immortal Sett</span> : Sunfire > Thornmail > Omen
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#Sylas">
+			<span style="color: lime;font-weight: bold;">Max Heal Sylas</span>
+			</button>
+			 : Riftmaker > Lich Bane > Demon's Embrace
+			 <div id="Sylas" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Conqueror > Triumph > Legend: Tenacity > Last Stand</p>
+			 				<p>Cheap Shot > Ravenous Hunter</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: lime;font-weight: bold;">Max Heal Sylas</span> : Riftmaker > Lich Bane > Demon's Embrace
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#Kat">
+			<span style="color: lime;font-weight: bold;">Immortal Katarina</span>
+			</button>
+			 : Sunfire > Titanic Hydra > Thornmail/DD
+			 <div id="Kat" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<h1 style="font-size: 20px;font-weight: bold;color: orange;">Conqueror Path</h1>
+			 				<p>Conqueror > Triumph > Legend: Alacrity > Last Stand</p>
+			 				<p>Taste of Blood > Ravenous Hunter</p>
+			 				<h1 style="font-size: 20px;font-weight: bold;color: lime;">Grasp Path</h1>
+			 				<p>Grasp > Demolish > Conditioning > Overgrowth/Unflinching</p>
+			 				<p>Taste of Blood > Ravenous Hunter</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: lime;font-weight: bold;">Immortal Katarina</span> : Sunfire > Titanic Hydra > Thornmail/DD
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<span style="color: crimson;font-weight: bold;">Bruiser Graves</span> : Goredrinker > Black Cleaver > Youmuu's/Collector
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#Graves">
+			<span style="color: red;font-weight: bold;">Bruiser Graves</span>
+			</button>
+			 : Goredrinker > Black Cleaver > Youmuu's/Collector
+			 <div id="Graves" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Phase Rush > Nimbus Cloak > Absolute Focus > Waterwalking</p>
+			 				<p>Triumph > Legend:Tenacity</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 		<tr>
 		<td>
-			<span style="color: crimson;font-weight: bold;">Whip me Daddy Thresh</span> : RFC > Kraken > IE/Essence Reaver
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#Whip">
+			<span style="color: red;font-weight: bold;">Whip me Daddy Thresh</span>
+			</button>
+			 : RFC > Kraken > IE/Essence Reaver
+			 <div id="Whip" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Dark Harvest > Taste of Blood > Eyeball Collection > Ravenous Hunter</p>
+			 				<p>Triumph > Coup de Grace</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: red;font-weight: bold;">JG Trist</span> : Kraken > Stormrazor > PD
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#JGTrist">
+			<span style="color: red;font-weight: bold;">JG Trist</span>
+			</button>
+			 : Kraken > Stormrazor > PD
+			 <div id="JGTrist" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Hail of Blades > Sudden Impact > Eyeball Collection/Zombie Ward > Ravenous Hunter</p>
+			 				<p>Legend: Alacrity > Coup de Grace</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: red;font-weight: bold;">Max Burn MF</span> : Liandry's > Demon's Embrace > Deathcap
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#BurnMF">
+			<span style="color: red;font-weight: bold;">Max Burn MF</span>
+			</button>
+			 : Liandry's > Demon's Embrace > Deathcap
+			 <div id="BurnMF" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Arcane Comet > Manaflow Band > Transcendence > Scorch</p>
+			 				<p>Presence of Mind > Coup de Grace</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: #00f;font-weight: bold;">GOTTA GO FAST UDYR</span> : Stridebreaker > Botrk > Dead Man's Plate
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#SPEED">
+			<span style="color: #00f;font-weight: bold;">GOTTA GO FAST UDYR</span>
+			</button>
+			 : Stridebreaker > Botrk > Dead Man's Plate
+			 <div id="SPEED" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Conqueror > Triumph > Legend: Alacrity > Last Stand</p>
+			 				<p>Conditioning > Unflinching</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: #00f;font-weight: bold;">Virgin Thresh Top</span> : Manamune > Kraken > RFC
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#Virgin">
+			<span style="color: #00f;font-weight: bold;">Virgin Thresh Top</span>
+			</button>
+			 : Manamune > Kraken > RFC
+			 <div id="Virgin" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Press The Attack > Triumph > Legend: Alacrity > Coup de Grace</p>
+			 				<p>Taste of Blood > Ravenous Hunter</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<span style="color: #00f;font-weight: bold;">AD Kass</span> : Manamune > Duskblade > Stormrazor
-		</td>
+			<button type="button" class="btn btn-link btn-anchor" data-toggle="modal" data-target="#KassADin">
+			<span style="color: #00f;font-weight: bold;">AD Kass</span>
+			</button>
+			 : Manamune > Divine Sunderer > Frozen Heart
+			 <div id="KassADin" class="modal fade" role="dialog">
+			 	<div class="modal-dialog">
+			 		<div class="model-content">
+			 			<div class="modal-header">
+			 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			 				<h4 class="modal-title">Runes:</h4>
+			 			</div>
+			 			<div class="modal-body">
+			 				<p>Conqueror > Presence of Mind > Legend: Bloodline > Coup de Grace</p>
+			 				<p>Sudden Impact > Ravenous Hunter</p>
+			 			</div>
+			 			<div class="modal-footer">
+			 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>	
 	</tr>
 </table>
 </body>
